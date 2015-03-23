@@ -25,7 +25,7 @@ e81f524a5b78        fedora/apache:latest   "/run-apache.sh"    2 minutes ago    
 efabeaecb6c7        fedora/apache:latest   "/run-apache.sh"    2 minutes ago       Up 2 minutes        172.17.8.101:81->80/tcp   a0
 ```
 
-* linking system より、a1 から a0 の80番ポートへの通信を許可、b1 から b0 の 80 番ポートへの通信を許可する
+* linking system により、a1 から a0 の80番ポートへの通信を許可、b1 から b0 の 80 番ポートへの通信を許可する
 * iptables によりコンテナの IP アドレス（10.1.0.0/16） から core-01 の eth1 へのパケットを DROPすることにより、expose されたポートへのコンテナからのアクセスを禁止する
 * a0 から http://a1:80/ へ通信が通り、http://b0:80/ と http://b1:80/ への通信が通らないことを確認する
 * b0 から http://b1:80/ へ通信が通り、http://a0:80/ と http://a1:80/ への通信が通らないことを確認する
