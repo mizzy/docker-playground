@@ -1,0 +1,46 @@
+GEM
+  remote: https://api.rubygems.org/
+  specs:
+    diff-lcs (1.2.5)
+    docker-api (1.20.0)
+      excon (>= 0.38.0)
+      json
+    excon (0.44.4)
+    json (1.8.2)
+    multi_json (1.11.0)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.2)
+    rake (10.4.2)
+    rspec (3.2.0)
+      rspec-core (~> 3.2.0)
+      rspec-expectations (~> 3.2.0)
+      rspec-mocks (~> 3.2.0)
+    rspec-core (3.2.2)
+      rspec-support (~> 3.2.0)
+    rspec-expectations (3.2.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.2.0)
+    rspec-its (1.2.0)
+      rspec-core (>= 3.0.0)
+      rspec-expectations (>= 3.0.0)
+    rspec-mocks (3.2.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.2.0)
+    rspec-support (3.2.2)
+    serverspec (2.12.0)
+      multi_json
+      rspec (~> 3.0)
+      rspec-its
+      specinfra (~> 2.23)
+    specinfra (2.24.2)
+      net-scp
+      net-ssh
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  docker-api
+  rake
+  serverspec
